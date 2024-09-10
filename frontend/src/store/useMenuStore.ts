@@ -5,7 +5,7 @@ import { createJSONStorage, persist } from "zustand/middleware";
 import { useRestaurantStore } from "./useRestaurantStore";
 import { toast } from "react-toastify";
 
-const API_END_POINT = "http://localhost:8000/api/v1/menu";
+const API_END_POINT = "https://restaurant-wqb4.onrender.com/api/v1/menu";
 axios.defaults.withCredentials = true;
 
 type MenuState = {

@@ -4,7 +4,7 @@ import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { CheckoutSessionRequest, OrderState } from "../types/orderType";
 
-const API_END_POINT: string = "http://localhost:8000/api/v1/order";
+const API_END_POINT: string = "https://restaurant-wqb4.onrender.com/api/v1/order";
 axios.defaults.withCredentials = true;
 
 export const useOrderStore = create<OrderState>()(persist((set => ({
