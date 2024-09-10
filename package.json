@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "dev": "nodemon backend/index.ts",
     "stripe":"stripe listen --forward-to localhost:8000/api/v1/order/webhook",
